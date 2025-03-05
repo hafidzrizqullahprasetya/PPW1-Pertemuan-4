@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Contoh Option - Korupsi</title>
+  </head>
+  <body>
+    <h2>Laporan Dugaan Korupsi</h2>
+    <p>
+      Menggunakan
+      <option>dalam dropdown untuk kategori korupsi.</option>
+    </p>
+
+    <form action="/submit-laporan" method="post">
+      <label for="kategori">Kategori Korupsi:</label><br />
+      <select id="kategori" name="kategori" required>
+        <option value="">Pilih kategori</option>
+        <option value="penggelapan">Penggelapan Dana</option>
+        <option value="penyuapan">Penyuapan</option>
+        <option value="nepotisme">Nepotisme</option></select
+      ><br /><br />
+      <input type="submit" value="Kirim" />
+    </form>
+  </body>
+</html>

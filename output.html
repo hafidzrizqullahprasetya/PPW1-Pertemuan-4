@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Contoh Output - Korupsi</title>
+</head>
+<body>
+    <h2>Laporan Dugaan Korupsi</h2>
+    <p>Menggunakan <output> untuk menampilkan hasil tingkat keparahan.</p>
+
+    <form action="/submit-laporan" method="post" oninput="hasil.value = parseInt(tingkat.value)">
+        <label for="tingkat">Tingkat Keparahan (1-10):</label><br>
+        <input type="range" id="tingkat" name="tingkat" min="1" max="10" value="5">
+        <output name="hasil" for="tingkat">5</output><br><br>
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>

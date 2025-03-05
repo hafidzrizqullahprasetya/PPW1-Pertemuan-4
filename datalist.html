@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Contoh Datalist - Korupsi</title>
+</head>
+<body>
+    <h2>Laporan Dugaan Korupsi</h2>
+    <p>Menggunakan <datalist> untuk saran lokasi kejadian.</p>
+
+    <form action="/submit-laporan" method="post">
+        <label for="lokasi">Lokasi Kejadian (Pilih atau Ketik):</label><br>
+        <input type="text" id="lokasi" name="lokasi" list="lokasi_saran" required>
+        <datalist id="lokasi_saran">
+            <option value="Jakarta">
+            <option value="Bandung">
+            <option value="Surabaya">
+            <option value="Yogyakarta">
+        </datalist><br><br>
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>

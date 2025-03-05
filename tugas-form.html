@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Pendaftaran Laporan Korupsi</title>
+  </head>
+  <body>
+    <img src="korupsi.jpg" width="500 " height="100" />
+
+    <h2>Pendaftaran Laporan Korupsi</h2>
+    <p>Silakan isi formulir untuk melaporkan dugaan tindakan korupsi.</p>
+
+    <form action="/submit-laporan" method="post">
+      <label for="nama">Nama Pelapor:</label><br />
+      <input
+        type="text"
+        id="nama"
+        name="nama"
+        placeholder="Masukkan nama Anda"
+      /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Masukkan email Anda"
+        required
+      /><br /><br />
+
+      <label>Jenis Laporan:</label><br />
+      <input type="checkbox" id="penyuapan" name="jenis[]" value="penyuapan" />
+      <label for="penyuapan">Penyuapan</label><br />
+      <input
+        type="checkbox"
+        id="penggelapan"
+        name="jenis[]"
+        value="penggelapan"
+      />
+      <label for="penggelapan">Penggelapan Dana</label><br />
+      <input type="checkbox" id="nepotisme" name="jenis[]" value="nepotisme" />
+      <label for="nepotisme">Nepotisme</label><br /><br />
+
+      <label>Prioritas Laporan:</label><br />
+      <input
+        type="radio"
+        id="tinggi"
+        name="prioritas"
+        value="tinggi"
+        required
+      />
+      <label for="tinggi">Tinggi</label><br />
+      <input type="radio" id="sedang" name="prioritas" value="sedang" />
+      <label for="sedang">Sedang</label><br />
+      <input type="radio" id="rendah" name="prioritas" value="rendah" />
+      <label for="rendah">Rendah</label><br /><br />
+
+      <label for="lokasi">Lokasi Kejadian:</label><br />
+      <select id="lokasi" name="lokasi" required>
+        <option value="">Pilih lokasi</option>
+        <option value="jakarta">Yogyakarta</option>
+        <option value="bandung">Jakarta</option>
+        <option value="surabaya">Surabaya</option>
+        <option value="lainnya">Lainnya</option></select
+      ><br /><br />
+
+      <label for="deskripsi">Deskripsi Kejadian:</label><br />
+      <textarea
+        id="deskripsi"
+        name="deskripsi"
+        rows="5"
+        placeholder="Jelaskan secara singkat"
+        required
+      ></textarea
+      ><br /><br />
+
+      <input type="submit" value="Kirim Laporan" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Contoh Optgroup - Korupsi</title>
+  </head>
+  <body>
+    <h2>Laporan Dugaan Korupsi</h2>
+    <p>
+      Menggunakan
+      <optgroup>untuk mengelompokkan kategori korupsi.</optgroup>
+    </p>
+
+    <form action="/submit-laporan" method="post">
+      <label for="kategori">Kategori Korupsi:</label><br />
+      <select id="kategori" name="kategori" required>
+        <optgroup label="Keuangan">
+          <option value="penggelapan">Penggelapan Dana</option>
+          <option value="penyuapan">Penyuapan</option>
+        </optgroup>
+        <optgroup label="Struktural">
+          <option value="nepotisme">Nepotisme</option>
+          <option value="kolusi">Kolusi</option>
+        </optgroup></select
+      ><br /><br />
+      <input type="submit" value="Kirim" />
+    </form>
+  </body>
+</html>
